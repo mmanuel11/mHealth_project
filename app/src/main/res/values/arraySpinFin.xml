@@ -5,6 +5,6 @@
         <item>Malo</item>
         <item>Moderadamente malo</item>
         <item>Ligeramente malo</item>
-        <item>Nada malo</item>
+        <item>No hay impacto</item>
     </string-array>
 </resources>
