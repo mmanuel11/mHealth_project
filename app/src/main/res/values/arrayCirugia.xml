@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerOptionCirugia">
+        <item>Ninguno</item>
+        <item>Abdominopélvico (mínima intervención)</item>
+        <item>Abdominopélvico (Operación abierta) Infraumbilical</item>
+        <item>Abdominopélvico (Operación abierta) Supraumbilical</item>
+        <item>Otorrinolaringología, cirugía de cabeza y cuello</item>
+        <item>Gastrointestinal superior/torácico</item>
+    </string-array>
+</resources>

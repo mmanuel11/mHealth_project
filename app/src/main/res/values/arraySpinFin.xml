@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerOptionFin">
+        <item>Significativamente malo</item>
+        <item>Malo</item>
+        <item>Moderadamente malo</item>
+        <item>Ligeramente malo</item>
+        <item>Nada malo</item>
+    </string-array>
+</resources>

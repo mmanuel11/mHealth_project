@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnerOption1">
+        <item>Sin disponibilidad</item>
+        <item>Menos del 40% de disponibilidad</item>
+        <item>Entre 40% a 60% de disponibilidad</item>
+        <item>Entre 61% a 95% de disponibilidad</item>
+        <item>Disponible</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerOption2">
+        <item>Significativamente malo</item>
+        <item>Algo malo</item>
+        <item>Equivalente</item>
+        <item>Algo mejor</item>
+        <item>Significativamaente bueno</item>
+    </string-array>
+</resources>

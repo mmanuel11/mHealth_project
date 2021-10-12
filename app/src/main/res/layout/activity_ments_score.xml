@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mentsSCore">
+
+    <Button
+        android:id="@+id/button_fin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:backgroundTint="#96E7F1"
+        android:text="Finalizar"
+        android:textColor="#E5F3FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_alerta"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <TextView
+        android:id="@+id/id_mentsScord"
+        android:layout_width="216dp"
+        android:layout_height="59dp"
+        android:background="#10C0D6"
+        android:text="MeNTS score"
+        android:textAlignment="center"
+        android:textColor="#D3E7F8"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.168" />
+
+    <TextView
+        android:id="@+id/id_alerta"
+        android:layout_width="330dp"
+        android:layout_height="63dp"
+        android:background="#F8EC83"
+        android:text="Descripción sobre la recomendación"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_mentsScord"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <TextView
+        android:id="@+id/id_numberScore"
+        android:layout_width="67dp"
+        android:layout_height="74dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_alerta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_mentsScord" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="102dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_alerta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_mentsScord"
+        app:layout_constraintVertical_bias="0.451" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
