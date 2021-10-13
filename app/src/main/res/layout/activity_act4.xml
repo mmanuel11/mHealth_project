@@ -10,52 +10,25 @@
         android:id="@+id/id_factEnfermedades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Factores asociados"
-        android:textColor="#2DB3C5"
-        android:textSize="34sp"
+        android:fontFamily="@font/biryani_bold"
+        android:text="Factores asociados a la enfermedad"
+        android:textAlignment="center"
+        android:textColor="#60C1CC"
+        android:textSize="40sp"
         android:textStyle="bold"
+        app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
 
-    <TextView
-        android:id="@+id/id_text1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="a la"
-        android:textColor="#2DB3C5"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.158" />
-
-    <TextView
-        android:id="@+id/id_enferm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="enfermedad"
-        android:textColor="#2DB3C5"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249" />
-
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="416dp"
-        android:layout_height="413dp"
+        android:layout_width="407dp"
+        android:layout_height="521dp"
         android:layout_marginTop="8dp"
-        android:background="#27C2D6"
+        android:background="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -69,22 +42,25 @@
         android:id="@+id/button_irenfemerdadesFact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#EDE1EF"
+        android:layout_marginTop="280dp"
+        android:backgroundTint="#FBFBFB"
         android:text="Ir"
-        android:textColor="#03A9F4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#60C1CC"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toTopOf="@+id/image2" />
 
     <ImageView
         android:id="@+id/image2"
-        android:layout_width="129dp"
-        android:layout_height="129dp"
+        android:layout_width="686dp"
+        android:layout_height="638dp"
         android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
+        app:srcCompat="@drawable/lupa_04_removebg_preview" />
 </androidx.constraintlayout.widget.ConstraintLayout>
