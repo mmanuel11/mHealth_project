@@ -9,15 +9,15 @@
     <EditText
         android:id="@+id/editTextNumber_postoperat4"
         android:layout_width="88dp"
-        android:layout_height="44dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toEndOf="@+id/id_intubaci"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <TextView
         android:id="@+id/id_percentagefinal"
@@ -25,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectanglebox"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="%"
         android:textAlignment="center"
         android:textColor="#E5F4F2"
@@ -32,24 +34,24 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toEndOf="@+id/editTextNumber_postoperat4"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintVertical_bias="0.669" />
 
     <EditText
         android:id="@+id/editTextNumber_postoperat3"
-        android:layout_width="87dp"
-        android:layout_height="41dp"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.392"
+        app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toEndOf="@+id/id_equipoQuirur"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.564" />
+        app:layout_constraintVertical_bias="0.561" />
 
     <TextView
         android:id="@+id/id_numero"
@@ -57,31 +59,33 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectanglebox"
-        android:text="número"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
+        android:text="No."
         android:textAlignment="center"
         android:textColor="#E5F4F2"
-        android:textSize="8sp"
+        android:textSize="10sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toEndOf="@+id/editTextNumber_postoperat3"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <EditText
         android:id="@+id/editTextNumber_postoperat2"
         android:layout_width="88dp"
-        android:layout_height="46dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toEndOf="@+id/id_sangre"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.449" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
         android:id="@+id/id_CC"
@@ -89,6 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:background="@drawable/rectanglebox"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="cc"
         android:textAlignment="center"
         android:textColor="#E5F4F2"
@@ -96,30 +102,32 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.276"
         app:layout_constraintStart_toEndOf="@+id/editTextNumber_postoperat2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444" />
+        app:layout_constraintVertical_bias="0.426" />
 
     <EditText
         android:id="@+id/editTextNumber_postoperat"
-        android:layout_width="89dp"
-        android:layout_height="41dp"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toEndOf="@+id/id_postopera"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.318" />
 
     <TextView
         android:id="@+id/id_percentage"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rectanglebox"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="%"
         android:textAlignment="center"
         android:textColor="#E5F4F2"
@@ -127,21 +135,21 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.257"
+        app:layout_constraintHorizontal_bias="0.266"
         app:layout_constraintStart_toEndOf="@+id/editTextNumber_postoperat"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.337" />
+        app:layout_constraintVertical_bias="0.326" />
 
     <EditText
         android:id="@+id/editTextNumber_espera"
-        android:layout_width="91dp"
-        android:layout_height="41dp"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toEndOf="@+id/id_espera"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.2" />
@@ -151,6 +159,8 @@
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rectanglebox"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="Horas"
         android:textAlignment="center"
         android:textColor="#E5F4F2"
@@ -167,21 +177,25 @@
         android:id="@+id/button_siguiMents"
         android:layout_width="101dp"
         android:layout_height="48dp"
-        android:backgroundTint="#2CB6C8"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="Siguiente"
-        android:textSize="10sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintHorizontal_bias="0.854"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.944" />
+        app:layout_constraintVertical_bias="0.941" />
 
     <TextView
         android:id="@+id/id_salaoper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Tiempo en sala de operación"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.134"
@@ -193,19 +207,23 @@
         android:id="@+id/id_sangre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Pérdida de sangre anticipada"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_postopera"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.123" />
 
     <TextView
         android:id="@+id/id_intubaci"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Probabilidad de intubación"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.122"
@@ -217,7 +235,9 @@
         android:id="@+id/id_sitio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Sitio cirugía"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.091"
@@ -229,7 +249,9 @@
         android:id="@+id/id_postopera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="UCI postoperatoria"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
@@ -241,7 +263,9 @@
         android:id="@+id/id_espera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Tiempo en espera"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.104"
@@ -253,7 +277,9 @@
         android:id="@+id/id_equipoQuirur"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/basic"
         android:text="Tamaño del equipo quirúrgico"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.137"
@@ -272,16 +298,18 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toEndOf="@+id/id_salaoper"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.076" />
 
     <TextView
         android:id="@+id/id_horas"
         android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rectanglebox"
+        android:backgroundTint="#60C1CC"
+        android:fontFamily="@font/biryani_bold"
         android:text="Horas"
         android:textAlignment="center"
         android:textColor="#E5F4F2"
@@ -296,8 +324,9 @@
 
     <Spinner
         android:id="@+id/id_spinnerCirugia"
-        android:layout_width="259dp"
-        android:layout_height="21dp"
+        android:layout_width="257dp"
+        android:layout_height="41dp"
+        android:backgroundTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.446"
