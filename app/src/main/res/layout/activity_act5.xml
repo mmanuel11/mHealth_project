@@ -6,28 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".act5">
 
-    <Spinner
-        android:id="@+id/spinner5"
-        android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644" />
-
-    <Spinner
-        android:id="@+id/spinner6"
-        android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
-
     <Button
         android:id="@+id/button_siguiTrata"
         android:layout_width="101dp"
@@ -38,16 +16,30 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909" />
+        app:layout_constraintVertical_bias="0.939" />
+
+    <TextView
+        android:id="@+id/id_6resulta"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="372dp"
+        android:fontFamily="@font/basic"
+        android:text="Impacto en el resultado por retraso de 6 semanas"
+        android:textAlignment="center"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/id_eficacia"
         android:layout_width="174dp"
         android:layout_height="34dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="132dp"
         android:fontFamily="@font/basic"
         android:text="Eficacia del tratamiento no quirurgico"
         android:textAlignment="center"
@@ -62,7 +54,7 @@
         android:id="@+id/id_noOpera"
         android:layout_width="174dp"
         android:layout_height="34dp"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="192dp"
         android:fontFamily="@font/basic"
         android:text="Riesgo del tratamiento no operatorio"
         android:textAlignment="center"
@@ -75,104 +67,113 @@
 
     <TextView
         android:id="@+id/id_resultadoEnfer"
-        android:layout_width="160dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="260dp"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="252dp"
         android:fontFamily="@font/basic"
         android:text="Impacto en el resultado por retraso de 2 semanas"
         android:textAlignment="center"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/id_dificultad"
-        android:layout_width="164dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="352dp"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="312dp"
         android:fontFamily="@font/basic"
         android:text="Impacto en el riesgo por retraso de 2 semanas"
         android:textAlignment="center"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/id_dificultad6"
-        android:layout_width="170dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="524dp"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="432dp"
         android:fontFamily="@font/basic"
         android:text="Impacto en el riesgo por retraso de 6 semanas"
         android:textAlignment="center"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/id_6resulta"
-        android:layout_width="168dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="444dp"
-        android:fontFamily="@font/basic"
-        android:text="Impacto en el resultado por retraso de 6 semanas"
-        android:textAlignment="center"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/spinner1"
         android:layout_width="129dp"
-        android:layout_height="42dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.435"
-        app:layout_constraintStart_toEndOf="@+id/id_eficacia"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.104" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="52dp"
-        android:backgroundTint="#60C1CC"
+        android:scrollbarStyle="outsideInset"
+        android:textAlignment="textEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
-
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
+        app:layout_constraintVertical_bias="0.226" />
 
     <Spinner
         android:id="@+id/spinner4"
         android:layout_width="129dp"
-        android:layout_height="42dp"
-        android:layout_marginEnd="48dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
         android:backgroundTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.51" />
+        app:layout_constraintVertical_bias="0.546" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="129dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.324" />
 
     <TextView
         android:id="@+id/textViewprocedimiento"
@@ -188,6 +189,18 @@
         app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.079" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="117dp"
+        android:layout_height="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
