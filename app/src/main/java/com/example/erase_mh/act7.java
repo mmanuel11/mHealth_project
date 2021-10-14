@@ -72,7 +72,7 @@ public class act7 extends AppCompatActivity {
                 int scoreofCirugia = cirugiaMethod(text_spinCirugia);
                 //
 
-                int terceraScoreFInal = (score_sala+score_espera+score_uci+score_sangre+score_equipo+score_intubacion+scoreofCirugia)/7;
+                int terceraScoreFInal = (score_sala+score_espera+score_uci+score_sangre+score_equipo+score_intubacion+scoreofCirugia);
 
 
                 Intent intent6 = new Intent(getApplicationContext(),mentsSCore.class);

@@ -120,7 +120,7 @@ public class act5 extends AppCompatActivity {
                 String text_spin6 = j_spin6.getSelectedItem().toString();
                 int operando6 = last(text_spin6);
 
-                int operativetotal = (operando1+operando2+operando3+operando4+operando5+operando6)/6;
+                int operativetotal = (operando1+operando2+operando3+operando4+operando5+operando6);
 
 
                 Intent intent4 = new Intent(getApplicationContext(),act6.class);

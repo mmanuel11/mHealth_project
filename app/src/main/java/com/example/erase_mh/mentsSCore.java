@@ -20,7 +20,7 @@ public class mentsSCore extends AppCompatActivity {
         int scoreSection3 = datos.getInt("section3");
         //
         TextView finalscore = findViewById(R.id.id_numberScore);
-        int totalScoreFinal = (scoreSection1+scoreSection2+scoreSection3)/3;
+        int totalScoreFinal = (scoreSection1+scoreSection2+scoreSection3);
         finalscore.setText(""+totalScoreFinal);
         findViewById(R.id.button_fin).setOnClickListener(new View.OnClickListener() {
             @Override
