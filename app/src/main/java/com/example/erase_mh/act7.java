@@ -18,14 +18,14 @@ public class act7 extends AppCompatActivity {
         setContentView(R.layout.activity_act7);
 
         Bundle datos = getIntent().getExtras();
-        int score = datos.getInt("lung");
+        int score = datos.getInt("section2");
 
         findViewById(R.id.button_siguiMents).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent6 = new Intent(getApplicationContext(),mentsSCore.class);
 
-                intent6.putExtra("lung",score);
+                intent6.putExtra("section2",score);
 
                 startActivity(intent6);
             }

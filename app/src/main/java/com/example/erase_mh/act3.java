@@ -88,7 +88,7 @@ public class act3 extends AppCompatActivity {
 
                 scoreSection1 = (edadComprobadoFinal+lungdisease+CVdisease+n_inmuno+n_diabetes+n_apnea+influenza)/7 ;
                 Intent intent2 =  new Intent(getApplicationContext(),act4.class);
-                intent2.putExtra("lung",scoreSection1);
+                intent2.putExtra("section1",scoreSection1);
                 startActivity(intent2);
             }
         });

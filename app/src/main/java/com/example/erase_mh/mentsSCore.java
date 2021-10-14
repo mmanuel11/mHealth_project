@@ -14,7 +14,7 @@ public class mentsSCore extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ments_score);
         Bundle datos = getIntent().getExtras();
-        int score = datos.getInt("lung");
+        int score = datos.getInt("section2");
         TextView finalscore = findViewById(R.id.id_numberScore);
         finalscore.setText(""+score);
         findViewById(R.id.button_fin).setOnClickListener(new View.OnClickListener() {
