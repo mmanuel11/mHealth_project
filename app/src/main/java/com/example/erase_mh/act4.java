@@ -14,7 +14,7 @@ public class act4 extends AppCompatActivity {
         setContentView(R.layout.activity_act4);
 
         Bundle datos = getIntent().getExtras();
-        int score = datos.getInt("section1");
+        int scoreSection1 = datos.getInt("section1");
 
 
 
@@ -23,7 +23,7 @@ public class act4 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent3 =  new Intent(getApplicationContext(),act5.class);
 
-                intent3.putExtra("section1",score);
+                intent3.putExtra("section1",scoreSection1);
 
                 startActivity(intent3);
             }

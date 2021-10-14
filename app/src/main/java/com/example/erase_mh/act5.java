@@ -88,7 +88,7 @@ public class act5 extends AppCompatActivity {
         setContentView(R.layout.activity_act5);
 
         Bundle datos = getIntent().getExtras();
-        int score = datos.getInt("section1");
+        int scoreSection1 = datos.getInt("section1");
 
         findViewById(R.id.button_siguiTrata).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,7 +125,7 @@ public class act5 extends AppCompatActivity {
 
                 Intent intent4 = new Intent(getApplicationContext(),act6.class);
 
-                intent4.putExtra("section1",score);
+                intent4.putExtra("section1",scoreSection1);
                 intent4.putExtra("section2",operativetotal);
 
                 startActivity(intent4);
