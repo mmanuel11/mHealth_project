@@ -27,8 +27,8 @@
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="425dp"
-        android:layout_height="477dp"
+        android:layout_width="745dp"
+        android:layout_height="459dp"
         android:layout_marginTop="8dp"
         android:background="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"

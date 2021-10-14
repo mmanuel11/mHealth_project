@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".mentsSCore">
 
     <Button
@@ -44,12 +45,12 @@
 
     <TextView
         android:id="@+id/id_alerta"
-        android:layout_width="330dp"
-        android:layout_height="63dp"
-        android:background="#F8EC83"
+        android:layout_width="298dp"
+        android:layout_height="43dp"
+        android:background="#F6EA83"
         android:text="Descripción sobre la recomendación"
         android:textAlignment="center"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -81,5 +82,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_mentsScord"
         app:layout_constraintVertical_bias="0.451" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="336dp"
+        android:layout_height="94dp"
+        android:backgroundTint="#60C1CC"
+        android:foregroundTint="#60C1CC"
+        android:indeterminateTint="#60C1CC"
+        android:max="105"
+        android:progress="10"
+        android:progressBackgroundTint="#60C1CC"
+        android:progressTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
