@@ -21,10 +21,17 @@ public class act5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act5);
+
+        Bundle datos = getIntent().getExtras();
+        int score = datos.getInt("lung");
+
         findViewById(R.id.button_siguiTrata).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent4 = new Intent(getApplicationContext(),act6.class);
+
+                intent4.putExtra("lung",score);
+
                 startActivity(intent4);
             }
         });

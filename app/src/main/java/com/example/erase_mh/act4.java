@@ -12,10 +12,19 @@ public class act4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act4);
+
+        Bundle datos = getIntent().getExtras();
+        int score = datos.getInt("lung");
+
+
+
         findViewById(R.id.button_irenfemerdadesFact).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent3 =  new Intent(getApplicationContext(),act5.class);
+
+                intent3.putExtra("lung",score);
+
                 startActivity(intent3);
             }
         });
