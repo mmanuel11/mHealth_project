@@ -47,22 +47,22 @@
         android:id="@+id/id_eficacia"
         android:layout_width="174dp"
         android:layout_height="34dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="72dp"
         android:fontFamily="@font/basic"
         android:text="Eficacia del tratamiento no quirurgico"
         android:textAlignment="center"
         android:textSize="16sp"
         app:autoSizeTextType="uniform"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/id_noOpera"
-        android:layout_width="166dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="172dp"
+        android:layout_width="174dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="132dp"
         android:fontFamily="@font/basic"
         android:text="Riesgo del tratamiento no operatorio"
         android:textAlignment="center"
@@ -136,21 +136,21 @@
         android:backgroundTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toEndOf="@+id/id_eficacia"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.128" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="129dp"
         android:layout_height="42dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="52dp"
         android:backgroundTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.242" />
+        app:layout_constraintVertical_bias="0.191" />
 
     <Spinner
         android:id="@+id/spinner3"
@@ -185,9 +185,9 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.022" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
