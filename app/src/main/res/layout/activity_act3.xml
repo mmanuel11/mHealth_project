@@ -696,7 +696,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:fontFamily="@font/biryani_bold"
-        android:text="Contacto con un caos positivo de COVID-19 en los ultimos 14 días"
+        android:text="Contacto con un caso positivo de COVID-19 en los ultimos 14 días"
         android:textColor="#60C1CC"
         android:textSize="12sp"
         app:autoSizeTextType="uniform"
