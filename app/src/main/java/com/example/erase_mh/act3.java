@@ -20,6 +20,7 @@ public class act3 extends AppCompatActivity {
     private int diabetes = 0;
     private int influenza = 0;
     private int covidTotal = 0;
+    private int inmunoTotal = 0;
 
     private int n_ningunPulmon = 0;
     private int n_minimoPulmon = 0;
@@ -32,7 +33,8 @@ public class act3 extends AppCompatActivity {
     private int n_severoCardiaco = 0;
 
 
-    private int n_diabetesNinguno = 1;
+    private int n_diabetesNinguno = 0;
+    private int n_diabetesLeve = 0;
     private int n_diabetesModerado = 0;
     private int n_diabetesSevero = 0;
 
@@ -40,7 +42,9 @@ public class act3 extends AppCompatActivity {
     private int n_apneaModerado = 0;
     private int n_apneaCPAC = 0;
 
-
+    private int n_inmunoNinguno = 0;
+    private int n_inmunoModerado = 0;
+    private int n_inmunoSevero = 0;
 
     private int n_influenzaSI = 0;
     private int n_influenzaNO = 0;
@@ -87,11 +91,12 @@ public class act3 extends AppCompatActivity {
                 lungdisease = n_ningunPulmon+n_minimoPulmon+n_mayorPulmon;
                 CVdisease = n_ningunCardiaco+n_minimoCardiaco+n_leveCardiaco+n_moderadoCardiaco+n_severoCardiaco;
                 apnea = n_apneaNo+n_apneaModerado+n_apneaCPAC;
-                diabetes = n_diabetesNinguno+n_diabetesModerado+n_diabetesSevero;
+                diabetes = n_diabetesNinguno+n_diabetesLeve+n_diabetesModerado+n_diabetesSevero;
                 influenza = n_influenzaNO+n_influenzaSI;
+                inmunoTotal = n_inmunoNinguno+n_inmunoModerado+n_inmunoSevero;
                 covidTotal = n_noCOVID+n_probablenoCOVID+n_posibleCOVID+n_probableCOVID+n_siCOVID;
 
-                scoreSection1 = (edadComprobadoFinal+lungdisease+CVdisease+apnea+diabetes+influenza+covidTotal) ;
+                scoreSection1 = (edadComprobadoFinal+lungdisease+CVdisease+apnea+diabetes+inmunoTotal+influenza+covidTotal) ;
                 Intent intent2 =  new Intent(getApplicationContext(),act4.class);
                 intent2.putExtra("section1",scoreSection1);
                 startActivity(intent2);
@@ -109,12 +114,17 @@ public class act3 extends AppCompatActivity {
         CheckBox severaCardiaco = findViewById(R.id.id_checkSeveraCardiaco);
 
         CheckBox diabetesNinguno = findViewById(R.id.id_checkDiabetesNinguno);
+        CheckBox diabetesLeve = findViewById(R.id.id_checkDiabetesleve);
         CheckBox diabetesModerado = findViewById(R.id.id_checkDiabetesModerado);
         CheckBox diabetesSevero = findViewById(R.id.id_checkDiabetesSevero);
 
         CheckBox apneaNo = findViewById(R.id.id_checkApneanotiene2);
         CheckBox apneaModerado = findViewById(R.id.id_checkApneaModerado2);
         CheckBox apneaCPAP = findViewById(R.id.id_checkIApneaUsaCPAP2);
+
+        CheckBox inmunoNinguno = findViewById(R.id.id_checkInmunoNinguna);
+        CheckBox inmunoModerado = findViewById(R.id.id_checkInmunoModerado);
+        CheckBox inmunoSevero = findViewById(R.id.id_checkInmunoSevero);
 
         ningunPulmon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -208,6 +218,16 @@ public class act3 extends AppCompatActivity {
                 }
             }
         });
+        diabetesLeve.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_diabetesLeve = 3;
+                } else {
+                    n_diabetesLeve = 0;
+                }
+            }
+        });
         diabetesModerado.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
@@ -235,7 +255,7 @@ public class act3 extends AppCompatActivity {
                 if(b){
                     n_apneaNo = 1;
                 } else {
-                    n_diabetesSevero = 0;
+                    n_apneaNo = 0;
                 }
             }
         });
@@ -245,7 +265,7 @@ public class act3 extends AppCompatActivity {
                 if(b){
                     n_apneaModerado = 4;
                 } else {
-                    n_diabetesSevero = 0;
+                    n_apneaModerado = 0;
                 }
             }
         });
@@ -259,6 +279,39 @@ public class act3 extends AppCompatActivity {
                 }
             }
         });
+        //Inmuno
+        inmunoNinguno.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_inmunoNinguno= 1;
+                } else {
+                    n_inmunoNinguno = 0;
+                }
+            }
+        });
+        inmunoModerado.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_inmunoModerado = 4;
+                } else {
+                    n_inmunoModerado = 0;
+                }
+            }
+        });
+        inmunoSevero.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_inmunoSevero = 5;
+                } else {
+                    n_inmunoSevero = 0;
+                }
+            }
+        });
+
+
         //Influenza
         Switch siInfluenza = findViewById(R.id.switchTos);
         Switch noInfluenza = findViewById(R.id.switchFiebre);
