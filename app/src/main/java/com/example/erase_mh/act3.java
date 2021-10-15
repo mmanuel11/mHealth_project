@@ -195,9 +195,9 @@ public class act3 extends AppCompatActivity {
         });
         Switch tos = findViewById(R.id.switchTos);
         Switch fiebre = findViewById(R.id.switchFiebre);
-        Switch garganta = findViewById(R.id.switchGarganta);
+       /* Switch garganta = findViewById(R.id.switchGarganta);
         Switch diarrea = findViewById(R.id.switchDIarrea);
-        Switch dolor = findViewById(R.id.switch6);
+        Switch dolor = findViewById(R.id.switch6);*/
 
         tos.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -221,7 +221,7 @@ public class act3 extends AppCompatActivity {
                 }
             }
         });
-        dolor.setOnClickListener(new View.OnClickListener() {
+        /*dolor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (tos.isChecked()) //checking if  switch is checked
@@ -231,8 +231,8 @@ public class act3 extends AppCompatActivity {
                     n_dolor = 0;
                 }
             }
-        });
-        diarrea.setOnClickListener(new View.OnClickListener() {
+        });*/
+        /*diarrea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (tos.isChecked()) //checking if  switch is checked
@@ -242,8 +242,8 @@ public class act3 extends AppCompatActivity {
                     n_diarrea = 0;
                 }
             }
-        });
-        garganta.setOnClickListener(new View.OnClickListener() {
+        });*/
+        /*garganta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (tos.isChecked()) //checking if  switch is checked
@@ -253,7 +253,7 @@ public class act3 extends AppCompatActivity {
                     n_garganta = 0;
                 }
             }
-        });
+        });*/
 
     }
 }
