@@ -9,7 +9,6 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.TextView;
 
 public class act3 extends AppCompatActivity {
 
@@ -17,22 +16,41 @@ public class act3 extends AppCompatActivity {
 
     private int lungdisease =0;
     private int CVdisease = 0;
+    private int apnea = 0;
+    private int diabetes = 0;
     private int influenza = 0;
+    private int covidTotal = 0;
 
-    private int n_asma = 0;
-    private int n_EPO = 0;
-    private int n_Fibrosis = 0;
-    private int n_hiper = 0;
-    private int n_insuficiencia = 0;
-    private int n_cronica = 0;
-    private int n_inmuno = 0;
-    private int n_diabetes = 0;
-    private int n_apnea = 0;
-    private int n_tos = 0;
-    private int n_fiebre = 0;
-    private int n_garganta =0;
-    private int n_diarrea = 0;
-    private int n_dolor = 0;
+    private int n_ningunPulmon = 0;
+    private int n_minimoPulmon = 0;
+    private int n_mayorPulmon = 0;
+
+    private int n_ningunCardiaco = 0;
+    private int n_minimoCardiaco = 0;
+    private int n_leveCardiaco = 0;
+    private int n_moderadoCardiaco = 0;
+    private int n_severoCardiaco = 0;
+
+
+    private int n_diabetesNinguno = 1;
+    private int n_diabetesModerado = 0;
+    private int n_diabetesSevero = 0;
+
+    private int n_apneaNo = 0;
+    private int n_apneaModerado = 0;
+    private int n_apneaCPAC = 0;
+
+
+
+    private int n_influenzaSI = 0;
+    private int n_influenzaNO = 0;
+
+    private int n_noCOVID = 0;
+    private int n_probablenoCOVID = 0;
+    private int n_probableCOVID = 0;
+    private int n_posibleCOVID = 0;
+    private int n_siCOVID= 0;
+
 
 
     public static int edadScore (int edad) {
@@ -61,199 +79,276 @@ public class act3 extends AppCompatActivity {
         findViewById(R.id.button_Aenfermedad).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Condición para lung disease
-                if (n_EPO == 1 || n_Fibrosis == 1)
-                {
-                    lungdisease = 5;
-                } else if (n_asma ==1)
-                {
-                    lungdisease = 4;
-                }
-                // Condicion para cardiac disease
-                CVdisease = n_hiper + n_insuficiencia + n_cronica + 2;
-                if (CVdisease >5)
-                {
-                    CVdisease = 5;
-                }
                 // Condicion de la edad
                 EditText edadUsuario = findViewById(R.id.editTextNumber_edad);
                 String edadFinalString = edadUsuario.getText().toString();
                 int edadFinalInt = Integer.parseInt(edadFinalString);
-
                 int edadComprobadoFinal = edadScore(edadFinalInt);
-                // Condicion de sintomas de influenza
-                if ((n_diarrea == 1 || n_dolor == 1 || n_garganta == 1  )&(n_tos == 1 || n_fiebre == 1)){
-                    influenza = 5;
-                }
+                lungdisease = n_ningunPulmon+n_minimoPulmon+n_mayorPulmon;
+                CVdisease = n_ningunCardiaco+n_minimoCardiaco+n_leveCardiaco+n_moderadoCardiaco+n_severoCardiaco;
+                apnea = n_apneaNo+n_apneaModerado+n_apneaCPAC;
+                diabetes = n_diabetesNinguno+n_diabetesModerado+n_diabetesSevero;
+                influenza = n_influenzaNO+n_influenzaSI;
+                covidTotal = n_noCOVID+n_probablenoCOVID+n_posibleCOVID+n_probableCOVID+n_siCOVID;
 
-                scoreSection1 = (edadComprobadoFinal+lungdisease+CVdisease+n_inmuno+n_diabetes+n_apnea+influenza) ;
+                scoreSection1 = (edadComprobadoFinal+lungdisease+CVdisease+apnea+diabetes+influenza+covidTotal) ;
                 Intent intent2 =  new Intent(getApplicationContext(),act4.class);
                 intent2.putExtra("section1",scoreSection1);
                 startActivity(intent2);
             }
         });
 
-        CheckBox asma = findViewById(R.id.id_checkAsma);
-        CheckBox EPOC = findViewById(R.id.id_checkPulmonar);
-        CheckBox fibrosis = findViewById(R.id.id_checkFibrosis);
-        CheckBox hipertension = findViewById(R.id.id_checkHiper);
-        CheckBox insuficiencia = findViewById(R.id.id_checkInsuficiencia);
-        CheckBox coronaria = findViewById(R.id.id_checkCoronaria);
-        CheckBox inmuno = findViewById(R.id.id_checkInmuno);
-        CheckBox diabetes = findViewById(R.id.id_checkDiabetes);
-        CheckBox apnea = findViewById(R.id.id_checkApnea);
+        CheckBox ningunPulmon = findViewById(R.id.id_checkNingunPulmon);
+        CheckBox minimoPulmon = findViewById(R.id.id_checkMinimoPulmon);
+        CheckBox mayorPulmon = findViewById(R.id.id_checkmayorPulmon);
 
-        asma.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_asma = 1;
-                } else {
-                    n_asma = 0;
-                }
-            }
-        });
-        EPOC.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_EPO = 1;
-                } else {
-                    n_EPO = 0;
-                }
-            }
-        });
-        fibrosis.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_Fibrosis = 1;
-                } else {
-                    n_Fibrosis = 0;
-                }
-            }
-        });
-        hipertension.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_hiper = 1;
-                } else {
-                    n_hiper = 0;
-                }
-            }
-        });
-        insuficiencia.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_insuficiencia = 1;
-                } else {
-                    n_insuficiencia = 0;
-                }
-            }
-        });
-        coronaria.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_cronica = 1;
-                } else {
-                    n_cronica = 0;
-                }
-            }
-        });
-        inmuno.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_inmuno = 5;
-                } else {
-                    n_inmuno = 0;
-                }
-            }
-        });
-        diabetes.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_diabetes = 5;
-                } else {
-                    n_diabetes = 0;
-                }
-            }
-        });
-        apnea.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                if(b){
-                    n_apnea = 5;
-                } else {
-                    n_apnea = 0;
-                }
-            }
-        });
-        Switch tos = findViewById(R.id.switchTos);
-        Switch fiebre = findViewById(R.id.switchFiebre);
-       /* Switch garganta = findViewById(R.id.switchGarganta);
-        Switch diarrea = findViewById(R.id.switchDIarrea);
-        Switch dolor = findViewById(R.id.switch6);*/
+        CheckBox ningunCardiaco = findViewById(R.id.id_checkningunCardiaco);
+        CheckBox minimoCardiaco = findViewById(R.id.id_checkIMinimoCardiaco);
+        CheckBox leveCardiaco = findViewById(R.id.id_checkleveCardiaco);
+        CheckBox moderadoCardiaco = findViewById(R.id.id_checkModeradaCardiaco);
+        CheckBox severaCardiaco = findViewById(R.id.id_checkSeveraCardiaco);
 
-        tos.setOnClickListener(new View.OnClickListener() {
+        CheckBox diabetesNinguno = findViewById(R.id.id_checkDiabetesNinguno);
+        CheckBox diabetesModerado = findViewById(R.id.id_checkDiabetesModerado);
+        CheckBox diabetesSevero = findViewById(R.id.id_checkDiabetesSevero);
+
+        CheckBox apneaNo = findViewById(R.id.id_checkApneanotiene2);
+        CheckBox apneaModerado = findViewById(R.id.id_checkApneaModerado2);
+        CheckBox apneaCPAP = findViewById(R.id.id_checkIApneaUsaCPAP2);
+
+        ningunPulmon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (tos.isChecked()) //checking if  switch is checked
-                {
-                    n_tos = 1;
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_ningunPulmon = 1;
                 } else {
-                    n_tos = 0;
+                    n_ningunPulmon = 0;
                 }
             }
         });
-        fiebre.setOnClickListener(new View.OnClickListener() {
+        minimoPulmon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (tos.isChecked()) //checking if  switch is checked
-                {
-                    n_fiebre = 1;
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_minimoPulmon = 4;
                 } else {
-                    n_fiebre = 0;
+                    n_minimoPulmon = 0;
                 }
             }
         });
-        /*dolor.setOnClickListener(new View.OnClickListener() {
+        mayorPulmon.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (tos.isChecked()) //checking if  switch is checked
-                {
-                    n_dolor = 1;
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_mayorPulmon = 5;
                 } else {
-                    n_dolor = 0;
+                    n_mayorPulmon = 0;
                 }
             }
-        });*/
-        /*diarrea.setOnClickListener(new View.OnClickListener() {
+        });
+        // Cardiaco
+        ningunCardiaco.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (tos.isChecked()) //checking if  switch is checked
-                {
-                    n_diarrea = 1;
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_ningunCardiaco = 1;
                 } else {
-                    n_diarrea = 0;
+                    n_ningunCardiaco = 0;
                 }
             }
-        });*/
-        /*garganta.setOnClickListener(new View.OnClickListener() {
+        });
+        minimoCardiaco.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onClick(View view) {
-                if (tos.isChecked()) //checking if  switch is checked
-                {
-                    n_garganta = 1;
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_minimoCardiaco = 2;
                 } else {
-                    n_garganta = 0;
+                    n_minimoCardiaco = 0;
                 }
             }
-        });*/
+        });
+        leveCardiaco.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_leveCardiaco = 3;
+                } else {
+                    n_leveCardiaco = 0;
+                }
+            }
+        });
+        moderadoCardiaco.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_moderadoCardiaco = 4;
+                } else {
+                    n_moderadoCardiaco = 0;
+                }
+            }
+        });
+        severaCardiaco.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_severoCardiaco = 5;
+                } else {
+                    n_severoCardiaco = 0;
+                }
+            }
+        });
+        // Diabetes
+        diabetesNinguno.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_diabetesNinguno = 1;
+                } else {
+                    n_diabetesNinguno = 0;
+                }
+            }
+        });
+        diabetesModerado.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_diabetesModerado = 4;
+                } else {
+                    n_diabetesModerado = 0;
+                }
+            }
+        });
+        diabetesSevero.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_diabetesSevero = 5;
+                } else {
+                    n_diabetesSevero = 0;
+                }
+            }
+        });
+        //Apnea
+        apneaNo.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_apneaNo = 1;
+                } else {
+                    n_diabetesSevero = 0;
+                }
+            }
+        });
+        apneaModerado.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_apneaModerado = 4;
+                } else {
+                    n_diabetesSevero = 0;
+                }
+            }
+        });
+        apneaCPAP.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if(b){
+                    n_apneaCPAC = 5;
+                } else {
+                    n_apneaCPAC = 0;
+                }
+            }
+        });
+        //Influenza
+        Switch siInfluenza = findViewById(R.id.switchTos);
+        Switch noInfluenza = findViewById(R.id.switchFiebre);
+
+
+        siInfluenza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (siInfluenza.isChecked()) //checking if  switch is checked
+                {
+                    n_influenzaSI = 5;
+                } else {
+                    n_influenzaSI = 0;
+                }
+            }
+        });
+        noInfluenza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (noInfluenza.isChecked()) //checking if  switch is checked
+                {
+                    n_influenzaNO = 1;
+                } else {
+                    n_influenzaNO = 0;
+                }
+            }
+        });
+        // COVID
+        CheckBox noCOVID = findViewById(R.id.id_checkCovidno);
+        CheckBox noprobableCOVID = findViewById(R.id.id_checkCovidprobablemeteno);
+        CheckBox probableCOVID = findViewById(R.id.id_checkCovidprobable);
+        CheckBox posibleCOVID = findViewById(R.id.id_checkCovidposible);
+        CheckBox siCOVID = findViewById(R.id.id_checkCovidSi);
+
+        noCOVID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (noCOVID.isChecked()) //checking if  switch is checked
+                {
+                    n_noCOVID = 1;
+                } else {
+                    n_noCOVID = 0;
+                }
+            }
+        });
+        noprobableCOVID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (noprobableCOVID.isChecked()) //checking if  switch is checked
+                {
+                    n_probablenoCOVID = 2;
+                } else {
+                    n_probablenoCOVID = 0;
+                }
+            }
+        });
+        probableCOVID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (probableCOVID.isChecked()) //checking if  switch is checked
+                {
+                    n_probableCOVID = 4;
+                } else {
+                    n_probableCOVID = 0;
+                }
+            }
+        });
+        siCOVID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (siCOVID.isChecked()) //checking if  switch is checked
+                {
+                    n_siCOVID = 5;
+                } else {
+                    n_siCOVID = 0;
+                }
+            }
+        });
+        posibleCOVID.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (posibleCOVID.isChecked()) //checking if  switch is checked
+                {
+                    n_posibleCOVID = 3;
+                } else {
+                    n_posibleCOVID = 0;
+                }
+            }
+        });
+
 
     }
 }

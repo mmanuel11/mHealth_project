@@ -54,7 +54,7 @@
         app:layout_constraintVertical_bias="0.437">
 
         <CheckBox
-            android:id="@+id/id_checkDiabetes"
+            android:id="@+id/id_checkDiabetesNinguno"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -107,7 +107,7 @@
             app:layout_constraintVertical_bias="0.692" />
 
         <CheckBox
-            android:id="@+id/id_checkApnea"
+            android:id="@+id/id_checkDiabetesModerado"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -132,7 +132,7 @@
             app:layout_constraintVertical_bias="0.692" />
 
         <CheckBox
-            android:id="@+id/id_checkInmuno"
+            android:id="@+id/id_checkDiabetesSevero"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -173,7 +173,7 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <CheckBox
-        android:id="@+id/id_checkCoronaria"
+        android:id="@+id/id_checkleveCardiaco"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -210,7 +210,7 @@
         app:layout_constraintVertical_bias="0.554" />
 
     <CheckBox
-        android:id="@+id/id_checkModerada"
+        android:id="@+id/id_checkModeradaCardiaco"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -221,7 +221,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <CheckBox
-        android:id="@+id/id_checkSevera"
+        android:id="@+id/id_checkSeveraCardiaco"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -244,7 +244,7 @@
         app:layout_constraintVertical_bias="0.55" />
 
     <CheckBox
-        android:id="@+id/id_checkHiper"
+        android:id="@+id/id_checkningunCardiaco"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
@@ -267,7 +267,7 @@
         app:layout_constraintVertical_bias="0.189">
 
         <CheckBox
-            android:id="@+id/id_checkFibrosis"
+            android:id="@+id/id_checkmayorPulmon"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -279,7 +279,7 @@
             app:layout_constraintVertical_bias="0.621" />
 
         <CheckBox
-            android:id="@+id/id_checkPulmonar"
+            android:id="@+id/id_checkMinimoPulmon"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -338,7 +338,7 @@
             app:layout_constraintVertical_bias="0.611" />
 
         <CheckBox
-            android:id="@+id/id_checkAsma"
+            android:id="@+id/id_checkNingunPulmon"
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:buttonTint="#60C1CC"
@@ -420,7 +420,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <CheckBox
-        android:id="@+id/id_checkInsuficiencia"
+        android:id="@+id/id_checkIMinimoCardiaco"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="24dp"
