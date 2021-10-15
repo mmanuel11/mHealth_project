@@ -47,7 +47,7 @@
         android:id="@+id/id_alerta"
         android:layout_width="298dp"
         android:layout_height="43dp"
-        android:background="#F6EA83"
+        android:background="#ECE395"
         android:text="Descripción sobre la recomendación"
         android:textAlignment="center"
         android:textSize="16sp"
