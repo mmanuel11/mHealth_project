@@ -75,7 +75,7 @@ public class act7 extends AppCompatActivity {
                 int terceraScoreFInal = (score_sala+score_espera+score_uci+score_sangre+score_equipo+score_intubacion+scoreofCirugia);
 
 
-                Intent intent6 = new Intent(getApplicationContext(),mentsSCore.class);
+                Intent intent6 = new Intent(getApplicationContext(),UmbralActivity.class);
 
                 intent6.putExtra("section1",scoreSection1);
                 intent6.putExtra("section2",scoreSection2);
