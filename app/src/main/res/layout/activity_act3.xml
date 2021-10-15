@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.657" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/constraintLayout9"
         android:layout_width="459dp"
         android:layout_height="66dp"
         android:background="#3760C1CC"
@@ -142,105 +142,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.609" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="459dp"
-        android:layout_height="66dp"
-        android:background="#3760C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654">
-
-        <TextView
-            android:id="@+id/id_ApneaNoTiene"
-            android:layout_width="60dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="48dp"
-            android:fontFamily="@font/basic"
-            android:text="No tiene"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.68" />
-
-        <TextView
-            android:id="@+id/id_ApneaModerado"
-            android:layout_width="60dp"
-            android:layout_height="16dp"
-            android:layout_marginStart="144dp"
-            android:fontFamily="@font/basic"
-            android:text="Moderada"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.68" />
-
-        <CheckBox
-            android:id="@+id/id_checkApneaNoTiene"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:buttonTint="#60C1CC"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/id_checkApneaNoTiene2"
-            app:layout_constraintHorizontal_bias="0.238"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
-
-        <CheckBox
-            android:id="@+id/id_checkApneaNoTiene2"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="108dp"
-            android:buttonTint="#60C1CC"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
-
-        <CheckBox
-            android:id="@+id/id_checkApneaCPAP"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="204dp"
-            android:buttonTint="#60C1CC"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.658" />
-
-        <TextView
-            android:id="@+id/id_ApneaCPAP"
-            android:layout_width="64dp"
-            android:layout_height="19dp"
-            android:layout_marginStart="32dp"
-            android:fontFamily="@font/basic"
-            android:text="Utiliza CPAP"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/id_ApneaModerado"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.659" />
-
-        <TextView
-            android:id="@+id/id_Apnea"
-            android:layout_width="49dp"
-            android:layout_height="20dp"
-            android:layout_marginStart="20dp"
-            android:fontFamily="@font/biryani_bold"
-            android:text="Apnea"
-            android:textColor="#60C1CC"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.133" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -660,85 +561,6 @@
         app:layout_constraintVertical_bias="0.186" />
 
     <TextView
-        android:id="@+id/id_Covid"
-        android:layout_width="385dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:fontFamily="@font/biryani_bold"
-        android:text="Contacto con un caos positivo de COVID-19 en los ultimos 14 días"
-        android:textColor="#60C1CC"
-        android:textSize="12sp"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
-
-    <CheckBox
-        android:id="@+id/id_checkCovidSi"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:buttonTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.891"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
-
-    <TextView
-        android:id="@+id/id_Covidsi"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:fontFamily="@font/basic"
-        android:text="Si"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.984"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
-
-    <CheckBox
-        android:id="@+id/id_checkCovidprobable"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:buttonTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.668"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
-
-    <TextView
-        android:id="@+id/id_CovidProbablementeno"
-        android:layout_width="78dp"
-        android:layout_height="14dp"
-        android:fontFamily="@font/basic"
-        android:text="No Probable"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
-
-    <CheckBox
-        android:id="@+id/id_checkCovidprobablemeteno"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:buttonTint="#60C1CC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
-
-    <TextView
         android:id="@+id/id_CovidPosible"
         android:layout_width="47dp"
         android:layout_height="14dp"
@@ -750,7 +572,7 @@
         app:layout_constraintHorizontal_bias="0.607"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintVertical_bias="0.81" />
 
     <TextView
         android:id="@+id/id_Covidno"
@@ -761,22 +583,48 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintVertical_bias="0.819" />
 
     <CheckBox
-        android:id="@+id/id_checkCovidposible"
+        android:id="@+id/id_checkCovidno"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:buttonTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintHorizontal_bias="0.051"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/id_CovidProbablementeno"
+        android:layout_width="78dp"
+        android:layout_height="14dp"
+        android:fontFamily="@font/basic"
+        android:text="No Probable"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <CheckBox
+        android:id="@+id/id_checkCovidprobablemeteno"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:buttonTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
 
     <TextView
         android:id="@+id/id_CovidProbable"
@@ -790,23 +638,77 @@
         app:layout_constraintHorizontal_bias="0.807"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintVertical_bias="0.81" />
 
     <CheckBox
-        android:id="@+id/id_checkCovidno"
+        android:id="@+id/id_checkCovidprobable"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:buttonTint="#60C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintHorizontal_bias="0.668"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784" />
+        app:layout_constraintVertical_bias="0.807" />
+
+    <CheckBox
+        android:id="@+id/id_checkCovidSi"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:buttonTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/id_Covidsi"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/basic"
+        android:text="Si"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <CheckBox
+        android:id="@+id/id_checkCovidposible"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:buttonTint="#60C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.807" />
+
+    <TextView
+        android:id="@+id/id_Covid"
+        android:layout_width="385dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/biryani_bold"
+        android:text="Contacto con un caos positivo de COVID-19 en los ultimos 14 días"
+        android:textColor="#60C1CC"
+        android:textSize="12sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.755" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ConstrainLayout5"
         android:layout_width="425dp"
-        android:layout_height="116dp"
+        android:layout_height="108dp"
         android:background="#3760C1CC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -828,6 +730,111 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.507" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="428dp"
+        android:layout_height="70dp"
+        android:background="#3760C1CC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.657">
+
+        <TextView
+            android:id="@+id/id_apnea2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/biryani_bold"
+            android:text="Apnea"
+            android:textColor="#60C1CC"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.142" />
+
+        <CheckBox
+            android:id="@+id/id_checkApneanotiene2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:buttonTint="#60C1CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.039"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+        <TextView
+            android:id="@+id/id_Apneano2"
+            android:layout_width="47dp"
+            android:layout_height="18dp"
+            android:fontFamily="@font/basic"
+            android:text="No tiene"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.692" />
+
+        <CheckBox
+            android:id="@+id/id_checkApneaModerado2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:buttonTint="#60C1CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.265"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+        <TextView
+            android:id="@+id/id_ApneaModerado2"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:fontFamily="@font/basic"
+            android:text="Moderado"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <CheckBox
+            android:id="@+id/id_checkIApneaUsaCPAP2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:buttonTint="#60C1CC"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.644" />
+
+        <TextView
+            android:id="@+id/id_ApneaUsaCPAP2"
+            android:layout_width="64dp"
+            android:layout_height="19dp"
+            android:fontFamily="@font/basic"
+            android:text="Usa CPAP"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.648"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.686" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
