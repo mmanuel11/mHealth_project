@@ -37,6 +37,8 @@ public class UmbralActivity extends AppCompatActivity {
                 intentScore.putExtra("section2",scoreSection2);
                 intentScore.putExtra("section3",scoreSection3);
 
+                int umbralReal = deslizador.getProgress();
+                intentScore.putExtra("Umbral",umbralReal);
                 startActivity(intentScore);
             }
         });
